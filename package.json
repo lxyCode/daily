@@ -1,0 +1,24 @@
+{
+  "name": "dailymanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-art-template": "^1.0.1",
+    "express-session": "^1.15.6",
+    "md5-node": "^1.0.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

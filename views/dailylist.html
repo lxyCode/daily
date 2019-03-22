@@ -1,0 +1,119 @@
+{{extend './template/layout.html'}}
+
+{{block 'title'}}我的日报{{/block}}
+
+{{block 'content'}}
+<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->   
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<h3 class="page-title">
+
+							 我的日报
+							 <small>每天写日报是一种好习惯</small>
+
+						</h3>
+
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+						<div class="portlet box blue">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-edit"></i></div>
+
+								
+
+							</div>
+
+							<div class="portlet-body">
+
+								<div class="clearfix">
+
+									
+								</div>
+
+								<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+
+									<thead>
+
+										<tr>
+
+											<th>发布时间</th>
+
+											<th>已办事项</th>
+
+											<th>待办事项</th>
+
+											<th>操作</th>
+
+									
+
+										</tr>
+
+									</thead>
+
+									<tbody>
+                                        {{each dailylist}}
+
+                           
+										<tr class="">
+                                            
+											<td>{{$value.dailytime}}</td>
+
+											<td>{{$value.already}}</td>
+
+											<td>{{$value.gtasks}}</td>
+
+											<td class="center">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+											</td>
+
+											
+
+										</tr>
+										{{/each}}
+
+										
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+
+						<!-- END EXAMPLE TABLE PORTLET-->
+
+					</div>
+
+				</div>
+ 
+
+</div>
+
+{{/block}}
+
+{{block 'script'}}	
+
+
+
+{{/block}}
